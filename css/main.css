@@ -80,6 +80,16 @@ i:not(:last-of-type) {
   align-items: center;
 }
 
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
 .txt-center {
   text-align: center;
 }
